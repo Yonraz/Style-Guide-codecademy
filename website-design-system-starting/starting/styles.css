@@ -1,4 +1,9 @@
 /* universal style */
+* {
+    box-sizing: border-box;
+}
+
+
 html {
     font-family: 'Anek Latin', sans-serif;
     font-weight: 400;
@@ -6,11 +11,7 @@ html {
 
 html, body {
     padding: 0;
-    margin: 0 auto;
-}
-
-* {
-    box-sizing: border-box;
+    margin: 0;
 }
 
 /* header */
@@ -19,14 +20,14 @@ html, body {
     background-color: rgb(237, 237, 237);
     width: 100%;
     height: 100%;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .header h2 {
     margin: 20px;
 }
 
-.header img{
+.header .header-logo {
     height: 63px;
     width: 80px;
     position: absolute;
@@ -49,11 +50,11 @@ html, body {
     text-align: center;
 }
 
-nav ul {
+.nav ul {
     background-color: white;
 }
 
-.nav li {
+.nav > li {
     display: inline-block; 
 }
 
@@ -71,13 +72,12 @@ nav ul {
 }
 
 /* Colors */
-.color {
-    height: 180px;
+.color-box {
     margin: 100px 0;
     padding-left: 70px;
 }
 
-.color li {
+.color-box li {
     display: inline-block;
     text-align: center;
     line-height: 30px;
@@ -86,17 +86,17 @@ nav ul {
     margin-top: 30px;
 }
 
-.color .red {
+.color-box .red {
     background-color: #db6f67;
 }
-.color .orange {
+.color-box .orange {
     background-color: #dba567;
 }
-.color .blue {
+.color-box .blue {
     background-color: #6780db;
 }
 
-.color .mint {
+.color-box .mint {
     background-color: #3EB489;
 }
 
@@ -184,46 +184,47 @@ nav ul {
     margin: 15px;
     padding: 7px 15px;
     font-weight: 700;
-    border: 1px solid;
+    border: 0px ;
+    outline: 1px solid;
     border-radius: 12px;
     transition: 0.3s;
 }
 .btn:hover {
     cursor: pointer;
-    border-width: 2px;
+    outline-width: 2px;
 }
 .btn-primary {
     background-color: #8ea7fe;
-    border-color: #5366ad;
+    outline-color: #5366ad;
     color: #fff;
 }
 .btn-secondary {
     background-color: lightgray;
-    border-color: gray;
+    outline-color: gray;
 }
 .btn-success {
-    border-color: #5db956;
+    outline-color: #5db956;
     background-color: #4fdb62;
     color: #fff;
 }
 .btn-danger {
-    border-color: darkred;
+    outline-color: darkred;
     background-color: red;
     color: #fff;
 }
 .btn-warning {
-    border-color: #b98b56;
+    outline-color: #b98b56;
     background-color: #e99d45;
     color: #fff;
 }
 .btn-info {
     background-color: rgb(20, 213, 247);
-    border-color: rgb(33, 153, 205);
+    outline-color: rgb(33, 153, 205);
 }
 .btn-dark {
     background-color: rgb(83, 79, 79);
     color: #fff;
-    border-color: rgb(43, 42, 42);
+    outline-color: rgb(43, 42, 42);
 }
 .btn-link {
     background-color: white;
@@ -269,7 +270,7 @@ nav ul {
     color: #5366ad;
 }
 
-.contact li a img {
+.contact  img {
     height: 30px;
     width: 30px;
 } 
